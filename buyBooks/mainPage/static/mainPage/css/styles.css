@@ -1,0 +1,26 @@
+/* mainPage/static/mainPage/css/styles.css */
+
+/* Style for the container div */
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Style for each image and button pair */
+.image-container > div {
+    margin-right: 20px;
+    text-align: center;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .image-container > div {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* 
+body{
+    background-color: aqua;
+} */

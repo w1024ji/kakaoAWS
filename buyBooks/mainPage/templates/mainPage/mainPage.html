@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'mainPage/css/styles.css' %}">
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1>Welcome to My Website!</h1>
+        <br>
+        <div class="image-container">
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="{% static 'mainPage/images/vegetarian.png' %}" alt="vegetarian" width="200" height="300">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="location.href='#'">Purchase Vegetarian</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="{% static 'mainPage/images/1984.png' %}" alt="1984" width="200" height="300">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="location.href='#'">Purchase 1984</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <img src="{% static 'mainPage/images/gonegirl.png' %}" alt="gonegirl" width="200" height="300">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="location.href='#'">Purchase Gone Girl</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>purchase</title>
+</head>
+<body>
+    <h1>Do you wanna buy?</h1>
+    <div class="row mt-5">
+        <h1 class="col-12 text-center my-5">KAKAO PAY</h1>
+        <form method="post" action="{% url 'purchase_action' %}" class="col-12 text-center">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-warning">카카오페이로 결제하기</button>
+        </form>
+    </div>
+</body>
+</html>
+

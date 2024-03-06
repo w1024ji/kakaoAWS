@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "mainPage",
+    "purchase",
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,5 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'mainPage/static'),
 ]
+
+OPENSSL_CONF = "C:\kakaoAWS\buyBooks\openssl.cnf"

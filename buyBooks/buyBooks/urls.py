@@ -23,6 +23,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('mainPage.urls')), # 기본 경로는 main page가 맡는다
+    path('purchase/', include('purchase.urls')), 
 ]
 
 if settings.DEBUG:
